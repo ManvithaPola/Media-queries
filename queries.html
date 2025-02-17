@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic deals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            background-image: url(bg.jpg);
+            background-size: cover;
+            padding:15px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+            overflow:scroll;
+        }
+        .main{
+            width:90%;
+            background-color: #FCE66F;
+            color: red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position:fixed;
+            top:10px;
+        }
+        .head{
+            font-size: 35px;
+        }
+        .card1{
+            min-width: 270px;
+            max-width: 270px;
+            min-height:320px;
+            max-height:320px;
+            background-image: url(laptop.jpg);
+            background-size: cover;
+            padding:10px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px grey;
+        }
+        .card2{
+            min-width: 270px;
+            max-width: 270px;
+            min-height:320px;
+            max-height:320px;
+            background-image: url(mobile.jpg);
+            background-size: cover;
+            padding:10px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px grey;
+        }
+        .card3{
+            min-width: 270px;
+            max-width: 270px;
+            min-height:320px;
+            max-height:320px;
+            background-image: url(headphones1.jpg);
+            background-size: cover;
+            padding:10px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px grey;
+        }
+        .card4{
+            min-width: 270px;
+            max-width: 270px;
+            min-height:320px;
+            max-height:320px;
+            background-image: url(watch1.jpg);
+            background-size: cover;
+            padding:10px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px grey;
+        }
+        .heading{
+            color:white;
+            font-size:25px;
+            text-shadow: 0 0 15px grey;
+        }
+        .tagline{
+            color:white;
+            font-size:15px;
+            text-shadow: 0 0 15px grey;
+            margin-top: 5px;
+        }
+        .btn{
+            background-color: aliceblue;
+            color:black;
+            margin-top: 15px;
+            border-radius: 8px;
+            padding:10px;
+            cursor: pointer;
+            box-shadow: 0 0 15px grey;
+        }
+        .tag{
+            color:white;
+            font-size:20px;
+            text-shadow: 0 0 15px grey;
+            margin-top: 5px;
+        }
+        @media(max-width:1000px){
+            .container{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media(max-width:500px){
+            .container{
+                flex-direction:row;
+                align-items: center;
+            }
+            .heading{
+                font-size:18px;
+            }
+            .tagline{
+                font-size: 10px;
+            }
+            .tag{
+                font-size: 12px;
+            }
+            .button{
+                padding:5px;
+                font-size: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="main">
+                <h1 class="head">Black Friday Scale</h1>
+                <marquee behavior="scroll" direction="left">Hurry! Limited-time deals on electronics! Up to 50% off on selected items!Shop now before it's too late!</marquee>
+            </div>
+            <div class="card1">
+                <h1 class="heading">Latest Laptop</h1>
+                <p class="tagline">Power and performance unleashed.</p>
+                <p class="tag">Get up to 40% Off</p>
+                <button class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="card2">
+                <h1 class="heading">Smartphones</h1>
+                <p class="tagline">Stay connected, anytime, anywhere.</p>
+                <p class="tag">Get up to 30% Off</p>
+                <button class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="card3">
+                <h1 class="heading">Wireless Headphones</h1>
+                <p class="tagline">Experience sound like never before.</p>
+                <p class="tag">Get up to 20% Off</p>
+                <button class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="card4">
+                <h1 class="heading">Smartwatches</h1>
+                <p class="tagline">Your health and style companion.</p>
+                <p class="tag">Get up to 35% Off</p>
+                <button class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+</body>
+</html>
