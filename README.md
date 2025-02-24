@@ -9,7 +9,7 @@ A **responsive** webpage showcasing the best **Black Friday electronics deals**,
 - **Responsive design** using media queries for different screen sizes  
 
 ## 📸 Screenshots  
-!(output.png)
+![Media queries view](output.png)
 
 ## 🛠️ Technologies Used  
 - HTML  
